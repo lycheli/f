@@ -62,7 +62,7 @@ p[rotate]{transform: rotate(90deg), translateX(0.025em);}
 /*#################################
 #################################*/
 
-cont { padding: 10vh 10vw; display: grid;gap:9px;justify-content: center;place-items: center;flex-wrap: wrap;gap: .1fr; } cont cont {border-radius: 10px;} 
+cont { max-width:100%; padding: 10vh 10vw; display: grid;gap:9px;justify-content: center;place-items: center;flex-wrap: wrap;gap: .1fr; } cont cont {border-radius: 10px;} 
 cont[mid] { padding: 25vh 10vw;}
 cont[big] { padding: 35vh 10vw;}
 cont[xl]  { padding: 55vh 10vw;}

@@ -125,6 +125,8 @@ p[italic] {font-style: italic;}
 p[bold] {font-weight: 700;}
 p[light] {font-weight: lighter;}
 
+img {width:18em;height:auto;max-width:18em;}
+img[icon] {width:1em; height:auto;}
 /*#################################
 #################################*/
 

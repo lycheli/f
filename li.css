@@ -67,7 +67,7 @@ cont[mid] { padding:2em 1em;}
 cont[big] { padding:3em 1em;}
 cont[xl]  { padding:4.5em 1em;}
     
-cont [type="card"] { height: 6em; max-height: 6em;  min-width: 4m; max-width: 4em; }
+cont [type="card"] { height: 6em; max-height: 6em;  min-width: 4em; max-width: 4em; }
 cont[head] { position:fixed; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.4px);
 -webkit-backdrop-filter: blur(5.4px); border-radius:0; left:0;right:0;top:0;}

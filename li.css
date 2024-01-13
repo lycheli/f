@@ -55,6 +55,10 @@ p[rotate]{transform: rotate(90deg), translateX(0.025em);}
 #################################*/
 
 cont { padding: 1em 1em; display: grid;gap:9px;justify-content: center;place-items: center;flex-wrap: wrap;gap: .1fr; } cont cont {border-radius: 10px;} 
+cont[mid] { padding:2em 1em;}
+cont[big] { padding:3em 1em;}
+cont[xl]  { padding:4.5em 1em;}
+    
 cont [type="card"] { height: 8em; max-height: 8em;  min-width: 6em; max-width: 6em; }
 cont[head] { position:fixed; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.4px);
@@ -126,7 +130,9 @@ p[bold] {font-weight: 700;}
 p[light] {font-weight: lighter;}
 
 img {width:18em;height:auto;max-width:18em;}
-img[icon] {width:1em; height:auto;}
+img[icon] {width:3em; border-radius:50%; height:auto;}
+img[avatar] {width:8em; border-radius:25%; height:auto;}
+
 /*#################################
 #################################*/
 

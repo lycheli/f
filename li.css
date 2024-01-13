@@ -31,7 +31,15 @@
 
 /*#################################
 #################################*/
+[grid] {gap:5px;display: grid;justify-content: center;place-content: center;gap: 9px;grid-template-columns: 2.5fr;grid-auto-rows: max-content;}
+[grid="2"] {display: grid; justify-content: center;place-content: center;gap: 5px;grid-template-columns: 1.23fr 1.23fr; grid-auto-rows: max-content;}
+[grid="3"] {display: grid; justify-content: center;place-content: center;gap:5px;grid-template-columns: 0.8fr 0.8fr 0.8fr; grid-auto-rows: max-content;}
+[grid="4"] {display: grid; justify-content: center;place-content: center;gap: 5px;grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr; grid-auto-rows: max-content;}
 
+[layer="-1"] {z-index: -1;} [layer="0"] {z-index: 0;}
+[layer="1" ] {z-index: 1;}  [layer="2"] {z-index: 2;}
+[layer="3" ] {z-index: 3;} 
+                                         
 bg {z-index: -1;top:0;left:0;right:0;bottom:0;position:fixed;display:block;}
 
 screen {z-index: 1;top:0;left:0;right:0;bottom:0;position:fixed;display:block;}

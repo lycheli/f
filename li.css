@@ -67,7 +67,8 @@ cont[mid] { padding: 25vh 10vw;}
 cont[big] { padding: 35vh 10vw;}
 cont[xl]  { padding: 55vh 10vw;}
     
-cont [type="card"] { height: 6em; max-height: 6em;  min-width: 4em; max-width: 4em; }
+cont [type="card"] { height: 10vh; max-height: 18em;  min-width: 8vw; max-width: 20em; }
+cont cont [type="list"] { height: max-content;  min-width: 18em; max-width: 18em; }
 cont[head] { position:fixed; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.4px);
 -webkit-backdrop-filter: blur(5.4px); border-radius:0; left:0;right:0;top:0;}

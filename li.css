@@ -62,10 +62,10 @@ p[rotate]{transform: rotate(90deg), translateX(0.025em);}
 /*#################################
 #################################*/
 
-cont { max-width:100%; padding: 10vh 10vw; display: grid;gap:9px;justify-content: center;place-items: center;flex-wrap: wrap;gap: .1fr; } cont cont {border-radius: 10px;} 
-cont[mid] { padding: 25vh 10vw;}
-cont[big] { padding: 35vh 10vw;}
-cont[xl]  { padding: 55vh 10vw;}
+cont { max-width: 100%; padding: 1em 1em; display: grid;gap:9px;justify-content: center;place-items: center;flex-wrap: wrap;gap: .1fr; } cont cont {border-radius: 10px;} 
+cont[mid] { padding: 2.5em 1em;}
+cont[big] { padding: 5em 1em;}
+cont[xl]  { padding: 8em 1em;}
     
 cont [type="card"] { height: 10vh; max-height: 18em;  min-width: 8vw; max-width: 20em; }
 cont cont [type="list"] { height: max-content;  min-width: 18em; max-width: 18em; }

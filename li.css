@@ -23,7 +23,7 @@
 
 [l] {color:var(--blue);} svg[l] {fill: var(--blue);} [lbg] {background-color:var(--blue);} [lol] {outline:var(--blue) solid 1.5px;} [lsh] {box-shadow: 2.5px 2.5px 0px 2px var(--blue );}
 
-[g] {color:var(--prim);} svg[g] {fill: var(--prim;} [gbg] {background-color:var(--prim);} [gol] {outline:var(--prim) solid 1.5px;} [gsh] {box-shadow: 2.5px 2.5px 0px 2px var(--prim );}
+[g] {color:var(--prim);} svg[g] {fill: var(--prim);} [gbg] {background-color:var(--prim);} [gol] {outline:var(--prim) solid 1.5px;} [gsh] {box-shadow: 2.5px 2.5px 0px 2px var(--prim );}
 
 [p] {color:var(--pink);} svg[p] {fill: var(--pink);} [pbg] {background-color:var(--pink);} [pol] {outline:var(--pink) solid 1.5px;} [psh] {box-shadow: 2.5px 2.5px 0px 2px var(--pink );}
 

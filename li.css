@@ -92,10 +92,46 @@ cont cont [type="list"] { height: max-content;  min-width: 18em; max-width: 18em
 cont[head] { position:fixed; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.4px);
 -webkit-backdrop-filter: blur(5.4px); border-radius:0; left:0;right:0;top:0;}
-cont[foot] { position:fixed; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+@media screen and (orientation: landscape) {
+ cont[side], cont[foot]{top: 0px;
+left: 0px;
+width: 1.8em;
+max-width:2em;
+bottom: 0px;
+gap: 5px;
+display: grid;
+place-content: center;
+padding: 1em;
+justify-content: center;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
 backdrop-filter: blur(5.4px);
--webkit-backdrop-filter: blur(5.4px); border-radius:0; left:0;right:0;bottom:0;}
+-webkit-backdrop-filter: blur(2.4px);
+position: fixed;
+}
 
+cont[side] *,cont[foot] * {padding 6px 4px;gap:5px;}
+
+}
+
+@media screen and (orientation: portrait)  {
+  cont[foot] {
+position:fixed; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+display:flex;
+place-content: center;
+padding: 1em;
+justify-content: center;
+
+backdrop-filter: blur(5.4px);
+-webkit-backdrop-filter: blur(5.4px);
+border-radius:0; 
+left:0;
+right:0;
+bottom:0;
+}
+
+cont[side] *,cont[foot] * {
+  padding: 2px 5px;gap:5px;}
+}
 cont[island]{margin:10px; border-radius:10px;}
 
 cont[wbg][lid] {

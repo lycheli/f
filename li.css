@@ -156,6 +156,10 @@ cont[hover="opacity"]:hover { transition: opacity 0.5s; opacity:50%;}
 cont[hover="grow"] { transition: size 0.5s; }
 cont[hover="grow"]:hover { transition: size 0.5s; size:50%;}
 
+slides { display: flex; overflow-x: scroll; scroll-snap-type: x mandatory; white-space: nowrap; transition: scroll-left 0.5s; }
+slides slide { flex: 0 0 100%; scroll-snap-align: start; transition: scroll-left 0.5s; box-sizing: border-box; }
+
+
 p[hover="opacity"] { transition: opacity 0.5s; }
 p[hover="opacity"]:hover { transition: opacity 0.5s; opacity:50%;}
 

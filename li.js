@@ -1,17 +1,17 @@
-function togAt(ell, oldAt, newAt) {
-thisEl = document.querySelector(ell);
-if (thisEl.getAttribute(oldAt)) {
-thisEl.removeAttribute(oldAt);
+function togAt(togell, oldAt, newAt) {
+togthisEl = document.querySelector(togell);
+if (togthisEl.getAttribute(oldAt)) {
+togthisEl.removeAttribute(oldAt);
 } else {
-thisEl.setAttribute(newAt, '');
+togthisEl.setAttribute(newAt, '');
 }
 }
-function hide(ell) {
-thisEl = document.querySelector(ell);
-thisEl.setAttribute("hide","");
+function hide(hideell) {
+hidethisEl = document.querySelector(hideell);
+hidethisEl.setAttribute("hide","");
 }
 
-function into(ell) {
-thisEl = document.querySelector(ell);
-thisEl.removeAttribute("hide");
+function into(toell) {
+intothisEl = document.querySelector(toell);
+intothisEl.removeAttribute("hide");
 }

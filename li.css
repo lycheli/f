@@ -21,7 +21,7 @@
 
 [y] {color:var(--yell);} svg[y] {fill: var(--yell);} [ybg] {background-color:var(--yell);} [yol] {outline:var(--yell) solid 1.5px;} [ysh] {box-shadow: 2.5px 2.5px 0px 2px var(--yell );}
 
-[l] {color:var(--blue);} svg[l] {fill: var(--blue);} [lbg] {background-color:var(--blue);} [lol] {outline:var(--blue) solid 1.5px;} [lsh] {box-shadow: 2.5px 2.5px 0px 2px var(--blue );}
+[l] {color:var(--blue);} svg[l] {fill: var(--blue);} [lbg] {background-color:var(--blue); } [lol] {outline:var(--blue) solid 1.5px;} [lsh] {box-shadow: 2.5px 2.5px 0px 2px var(--blue );}
 
 [g] {color:var(--prim);} svg[g] {fill: var(--prim);} [gbg] {background-color:var(--prim);} [gol] {outline:var(--prim) solid 1.5px;} [gsh] {box-shadow: 2.5px 2.5px 0px 2px var(--prim );}
 
@@ -117,7 +117,7 @@ backdrop-filter: blur(5.4px);
 position: fixed;
 }
 
-cont[side] *,cont[foot] * {padding 6px 4px;gap:5px;}
+cont[side] *,cont[foot] * {padding: 6px 4px;gap:5px;}
 
 }
 
@@ -259,3 +259,4 @@ img[avatar] {width:8em; border-radius:25px; height:auto;}
 
  [px="out"], [px]{border-radius:0px;transition: outline, box-shadow,0.5s; outline: rgba(225,225,225,0.25) solid 2.5px; box-shadow:  inset -4px -4px 1px rgba(0,0,0,0.25), inset 4px 4px 1px rgba(255,255,255,0.25) , 4px 4px 1px rgba(0,0,0,0.25);}
 [px="in"],[px="out"]:hover,[px="out"]:active{transition: outline, box-shadow, 0.5s; outline: rgba(0,0,0,0.15) solid 0.5px; box-shadow: inset 4px 4px 1px rgba(0,0,0,0.25),  inset -4px -4px 1px rgba(255,255,255,0.25);} [px="in"] *, [px="out"]:hover *, [px="out"]active * { opacity:80%;}
+

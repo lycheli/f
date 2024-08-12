@@ -56,16 +56,10 @@ document.getElementById('exportBtn').addEventListener('click', () => {
 
     doc.setFontSize(textSize);
 
-    const pageWidth = doc.internal.pageSize.width;
-    const textWidth = pageWidth - 2 * margin; // Available width for text
-    const lines = doc.splitTextToSize(text, textWidth);
+    const x = margin; // Left margin
+    const y = margin + textSize; // Top margin
 
-    let y = margin + textSize; // Start position
-
-    lines.forEach(line => {
-        doc.text(line, margin, y);
-        y += textSize * 1.23; // Line height
-    });
+    doc.text(text, x, y, { maxWidth: doc.internal.pageSize.width - 2 * margin });
 
     const randomNumber = Math.floor(Math.random() * 1000000);
     doc.save(`${randomNumber}.pdf`);

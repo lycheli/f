@@ -56,10 +56,16 @@ document.getElementById('exportBtn').addEventListener('click', () => {
 
     doc.setFontSize(textSize);
 
-    const x = margin; // X position with margin
-    const y = margin + textSize; // Y position with margin
+    const pageWidth = doc.internal.pageSize.width;
+    const textWidth = pageWidth - 2 * margin; // Available width for text
+    const lines = doc.splitTextToSize(text, textWidth);
 
-    doc.text(text, x, y);
+    let y = margin + textSize; // Start position
+
+    lines.forEach(line => {
+        doc.text(line, margin, y);
+        y += textSize * 1.23; // Line height
+    });
 
     const randomNumber = Math.floor(Math.random() * 1000000);
     doc.save(`${randomNumber}.pdf`);

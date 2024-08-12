@@ -48,20 +48,24 @@
     <script>
         const { jsPDF } = window.jspdf;
 
-        document.getElementById('exportBtn').addEventListener('click', () => {
-            const doc = new jsPDF();
-            const text = document.getElementById('textInput').value;
-            const textSize = 12;
-            doc.setFontSize(textSize);
+document.getElementById('exportBtn').addEventListener('click', () => {
+    const doc = new jsPDF();
+    const text = document.getElementById('textInput').value;
+    const textSize = 12;
+    const margin = 10; // Margin in mm
 
-            const pageWidth = doc.internal.pageSize.width;
-            const y = 20;
+    doc.setFontSize(textSize);
 
-            doc.text(text, pageWidth / 2, y, { align: 'center' });
+    const pageWidth = doc.internal.pageSize.width;
+    const textWidth = doc.getStringUnitWidth(text) * textSize / 72;
+    const x = (pageWidth - textWidth) / 2 + margin; // Add margin
+    const y = margin + textSize; // Add margin
 
-            const randomNumber = Math.floor(Math.random() * 1000000);
-            doc.save(`${randomNumber}.pdf`);
-        });
+    doc.text(text, x, y, { align: 'center' });
+
+    const randomNumber = Math.floor(Math.random() * 1000000);
+    doc.save(`${randomNumber}.pdf`);
+});
     </script>
 </body>
 </html>

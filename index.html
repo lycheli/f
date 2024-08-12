@@ -56,12 +56,10 @@ document.getElementById('exportBtn').addEventListener('click', () => {
 
     doc.setFontSize(textSize);
 
-    const pageWidth = doc.internal.pageSize.width;
-    const textWidth = doc.getStringUnitWidth(text) * textSize / 72;
-    const x = (pageWidth - textWidth) / 2 + margin; // Add margin
-    const y = margin + textSize; // Add margin
+    const x = margin; // X position with margin
+    const y = margin + textSize; // Y position with margin
 
-    doc.text(text, x, y, { align: 'center' });
+    doc.text(text, x, y);
 
     const randomNumber = Math.floor(Math.random() * 1000000);
     doc.save(`${randomNumber}.pdf`);
